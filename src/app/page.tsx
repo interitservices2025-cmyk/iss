@@ -165,7 +165,7 @@ export default function HomeApp() {
       website: "https://www.inter-rh.com",
       description: "Gestion stratégique des talents, conseil organisationnel et recrutement de haut niveau pour bâtir des équipes d'excellence.",
       icon: Users,
-      image: "https://images.unsplash.com/photo-1521737711867-e3b904737077?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800",
       services: [
         "Recrutement de talents nationaux et internationaux",
         "Gestion RH externalisée & Audit social",
