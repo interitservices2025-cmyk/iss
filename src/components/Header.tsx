@@ -41,23 +41,16 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo ISS */}
-          <Link href="#accueil" className="flex items-center gap-3 group">
+          <Link href="#accueil" className="flex items-center group">
             <div className="relative w-16 h-12 transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/logo.png"
-                alt="Logo INTER-SOLUTIONS SERVICES"
+                alt="Logo ISS"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
-            <span
-              className={`font-semibold tracking-wider text-xs hidden sm:block transition-colors duration-300 ${
-                isScrolled ? "text-primary" : "text-white"
-              }`}
-            >
-              INTER-SOLUTIONS SERVICES
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

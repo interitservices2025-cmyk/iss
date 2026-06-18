@@ -83,18 +83,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Logo & Description Column */}
           <div className="flex flex-col gap-5 col-span-1 md:col-span-1">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center">
               <div className="relative w-16 h-12">
                 <Image
                   src="/logo.png"
-                  alt="Logo INTER-SOLUTIONS SERVICES"
+                  alt="Logo ISS"
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="font-semibold tracking-wider text-xs">
-                INTER-SOLUTIONS SERVICES
-              </span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mt-2">
               Ensemble, construisons vos solutions de demain. Un groupe multidisciplinaire pour vous accompagner dans vos projets stratégiques.
@@ -233,12 +230,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="block text-white font-medium mb-0.5">Téléphone :</span>
-                <span>+1 (438) 835-1888</span> {/* Valeur par défaut professionnelle */}
+                <span className="block text-white font-medium mb-0.5">Téléphones :</span>
+                <span>+237 695296446 / 679033398</span>
               </li>
               <li>
                 <span className="block text-white font-medium mb-0.5">Adresse :</span>
-                <span>Montreal, QC, Canada</span> {/* Valeur professionnelle par défaut (compatible .ca) */}
+                <span>Tradex Tsinga Yaoundé Cameroun</span>
               </li>
             </ul>
           </div>
@@ -249,7 +246,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/50 text-center sm:text-left">
-            &copy; {currentYear} INTER-SOLUTIONS SERVICES (ISS). Tous droits réservés.
+            &copy; {currentYear} INTERNATIONAL SOLUTIONS SERVICES (ISS). Tous droits réservés.
           </p>
           <button
             onClick={scrollToTop}

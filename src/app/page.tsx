@@ -151,11 +151,12 @@ export default function HomeApp() {
       icon: Laptop,
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
       services: [
-        "Développement web (Sites complexes, SaaS)",
-        "Solutions d'entreprise (CRM, ERP, Cloud)",
-        "Design graphique & Identité visuelle",
-        "Marketing digital & Référencement (SEO)",
-        "Formations professionnelles IT"
+        "Design & Créativité Augmentée",
+        "Digital & Web \"AI-Native\"",
+        "IA & Communication",
+        "Marketing Numérique",
+        "Storytelling & Création",
+        "Formations"
       ],
       color: "from-blue-600 to-indigo-800"
     },
@@ -289,7 +290,7 @@ export default function HomeApp() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-xs font-semibold tracking-wider text-secondary uppercase mb-8"
             >
               <Sparkles size={14} className="animate-pulse" />
-              Groupe Multidisciplinaire International
+              Groupe Multidisciplinaire
             </motion.div>
 
             {/* Titre principal */}
@@ -704,7 +705,7 @@ export default function HomeApp() {
                   className="glass-card-dark p-8 rounded-3xl transition-transform duration-300 hover:-translate-y-2 flex flex-col justify-between"
                 >
                   <div>
-                    <span className="text-5xl font-extrabold text-white/10 block mb-6 font-mono">
+                    <span className="text-5xl font-extrabold text-secondary block mb-6 font-mono">
                       {item.id}
                     </span>
                     <h3 className="text-lg font-bold text-white mb-3">
@@ -902,8 +903,8 @@ export default function HomeApp() {
                         <Phone size={18} />
                       </div>
                       <div>
-                        <h4 className="text-xs uppercase tracking-widest text-white/55 font-bold mb-1">Téléphone</h4>
-                        <span className="text-sm font-semibold">+1 (438) 835-1888</span>
+                        <h4 className="text-xs uppercase tracking-widest text-white/55 font-bold mb-1">Téléphones</h4>
+                        <span className="text-sm font-semibold">+237 695296446 / 679033398</span>
                       </div>
                     </div>
 
@@ -912,8 +913,8 @@ export default function HomeApp() {
                         <MapPin size={18} />
                       </div>
                       <div>
-                        <h4 className="text-xs uppercase tracking-widest text-white/55 font-bold mb-1">Siège social</h4>
-                        <span className="text-sm font-semibold">Montreal, QC, Canada</span>
+                        <h4 className="text-xs uppercase tracking-widest text-white/55 font-bold mb-1">Adresse</h4>
+                        <span className="text-sm font-semibold">Tradex Tsinga Yaoundé Cameroun</span>
                       </div>
                     </div>
                   </div>
@@ -924,7 +925,7 @@ export default function HomeApp() {
                   <div className="absolute inset-0 bg-neutral-800 flex flex-col items-center justify-center p-4 text-center">
                     <MapPin size={36} className="text-secondary mb-3 animate-bounce" />
                     <h4 className="font-bold text-xs uppercase tracking-wider text-white">Localisation interactive</h4>
-                    <p className="text-[10px] text-white/60 mt-1 max-w-[200px]">Montréal, Québec, Canada</p>
+                    <p className="text-[10px] text-white/60 mt-1 max-w-[200px]">Tradex Tsinga, Yaoundé, Cameroun</p>
                   </div>
                   {/* Overlay opaque simulé et interactif pour l'intégration de maps */}
                   <div className="absolute inset-0 bg-primary/45 opacity-30 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none" />
@@ -996,7 +997,7 @@ export default function HomeApp() {
                           value={formData.phone}
                           onChange={handleFormChange}
                           className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/35 focus:outline-none focus:border-secondary transition-colors text-sm"
-                          placeholder="Ex: +1 (514) 555-0199"
+                          placeholder="Ex: +237 695 296 446"
                         />
                       </div>
                     </div>
