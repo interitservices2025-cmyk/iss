@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 
-// Icônes de réseaux sociaux personnalisées pour éviter les incompatibilités de build
+// Icônes de réseaux sociaux personnalisées
 function FacebookIcon(props: any) {
   return (
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -29,8 +29,8 @@ function InstagramIcon(props: any) {
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -50,8 +50,8 @@ function LinkedinIcon(props: any) {
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -74,186 +74,174 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-white border-t border-white/10 relative overflow-hidden">
-      {/* Abstract Background Design */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-light/10 rounded-full blur-3xl pointer-events-none -ml-20 -mb-20"></div>
+    <footer className="bg-primary text-white border-t border-white/5 relative overflow-hidden">
+      {/* Abstract Grid background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 pt-16 pb-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          {/* Logo & Description Column */}
-          <div className="flex flex-col gap-5 col-span-1 md:col-span-1">
+      {/* Decorative Blur Spheres */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none -mr-40 -mt-40"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary-light/10 rounded-full blur-[120px] pointer-events-none -ml-40 -mb-40"></div>
+
+      <div className="max-w-7xl mx-auto px-8 lg:px-12 pt-20 pb-10 relative z-10">
+        
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+          
+          {/* Logo & Manifesto Column */}
+          <div className="flex flex-col gap-6 lg:col-span-2">
             <div className="flex items-center">
-              <div className="relative w-16 h-12">
+              <div className="bg-white px-3 py-1.5 rounded flex items-center justify-center relative w-20 h-14">
                 <Image
                   src="/logo.png"
                   alt="Logo ISS"
                   fill
-                  className="object-contain"
+                  className="object-contain p-1"
                 />
               </div>
             </div>
-            <p className="text-white/60 text-sm leading-relaxed mt-2">
-              Ensemble, construisons vos solutions de demain. Un groupe multidisciplinaire pour vous accompagner dans vos projets stratégiques.
+            <p className="text-white/60 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Inter-Solutions Services (ISS) est une holding multidisciplinaire internationale. Nous orchestrons des filiales leaders pour structurer l'avenir de la technologie, des ressources humaines, de l'immobilier et de la maintenance industrielle.
             </p>
-            {/* Social Icons */}
+            {/* Social Links */}
             <div className="flex items-center gap-4 mt-2">
               <Link
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300"
+                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300"
                 aria-label="LinkedIn"
               >
-                <LinkedinIcon size={18} />
+                <LinkedinIcon />
               </Link>
               <Link
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300"
+                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300"
                 aria-label="Facebook"
               >
-                <FacebookIcon size={18} />
+                <FacebookIcon />
               </Link>
               <Link
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300"
+                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300"
                 aria-label="Instagram"
               >
-                <InstagramIcon size={18} />
+                <InstagramIcon />
               </Link>
             </div>
           </div>
 
-          {/* Groupe Column */}
+          {/* Column 2: Holding & Gouvernance */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-secondary">
-              Groupe
+            <h3 className="text-[10px] font-bold tracking-widest uppercase text-secondary">
+              Holding & Gouvernance
             </h3>
-            <ul className="flex flex-col gap-2.5">
+            <ul className="flex flex-col gap-3 text-xs">
               <li>
-                <Link
-                  href="#accueil"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
-                  Accueil
+                <Link href="#accueil" className="text-white/60 hover:text-white transition-colors duration-200">
+                  Le Groupe ISS
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#a-propos"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
+                <Link href="#a-propos" className="text-white/60 hover:text-white transition-colors duration-200">
                   À propos
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#nos-filiales"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
-                  Nos filiales
+                <Link href="#ecosysteme" className="text-white/60 hover:text-white transition-colors duration-200">
+                  Écosystème Connecté
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#contact"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
-                  Contact
+                <Link href="#leadership" className="text-white/60 hover:text-white transition-colors duration-200">
+                  Message du CEO
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Filiales Column */}
+          {/* Column 3: Nos Filiales */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-secondary">
-              Filiales
+            <h3 className="text-[10px] font-bold tracking-widest uppercase text-secondary">
+              Nos Structures
             </h3>
-            <ul className="flex flex-col gap-2.5">
+            <ul className="flex flex-col gap-3 text-xs">
               <li>
-                <Link
-                  href="https://inter-itservices.ca"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
+                <Link href="https://inter-itservices.ca" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-200">
                   Inter-IT Services
                 </Link>
               </li>
               <li>
-                <Link
-                  href="https://www.inter-rh.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
+                <Link href="https://www.inter-rh.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-200">
                   Inter-RH
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#nos-filiales"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
+                <Link href="#filiales" className="text-white/60 hover:text-white transition-colors duration-200">
                   Inter-Immo
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#nos-filiales"
-                  className="text-white/70 hover:text-white text-sm transition-colors duration-200"
-                >
+                <Link href="#filiales" className="text-white/60 hover:text-white transition-colors duration-200">
                   Electromeca+
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Details Column */}
+          {/* Column 4: Contact Institutionnel */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-secondary">
-              Contact
+            <h3 className="text-[10px] font-bold tracking-widest uppercase text-secondary">
+              Contact Cameroun
             </h3>
-            <ul className="flex flex-col gap-3 text-sm text-white/70">
+            <ul className="flex flex-col gap-3.5 text-xs text-white/60">
               <li>
-                <span className="block text-white font-medium mb-0.5">E-mail :</span>
-                <Link
-                  href="mailto:contact@inter-solutionsservices.com"
-                  className="hover:text-white transition-colors duration-200"
-                >
-                  contact@inter-solutionsservices.com
-                </Link>
+                <span className="block text-white font-semibold mb-0.5">Adresse :</span>
+                <span>Tradex Tsinga Yaoundé Cameroun</span>
               </li>
               <li>
-                <span className="block text-white font-medium mb-0.5">Téléphones :</span>
+                <span className="block text-white font-semibold mb-0.5">Téléphones :</span>
                 <span>+237 695296446 / 679033398</span>
               </li>
               <li>
-                <span className="block text-white font-medium mb-0.5">Adresse :</span>
-                <span>Tradex Tsinga Yaoundé Cameroun</span>
+                <span className="block text-white font-semibold mb-0.5">E-mail :</span>
+                <Link href="mailto:contact@inter-solutionsservices.com" className="hover:text-white transition-colors duration-200">
+                  contact@inter-solutionsservices.com
+                </Link>
               </li>
             </ul>
           </div>
+
         </div>
 
-        <hr className="border-white/10 my-8" />
+        <hr className="border-white/5 my-10" />
 
-        {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/50 text-center sm:text-left">
-            &copy; {currentYear} INTERNATIONAL SOLUTIONS SERVICES (ISS). Tous droits réservés.
-          </p>
+        {/* Extended Footer Legal and Copyright Bar - Deloitte/Accenture inspired */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-8 gap-y-3">
+            <p className="text-[10px] text-white/40 tracking-wider">
+              &copy; {currentYear} Inter-Solutions Services (ISS). Tous droits réservés.
+            </p>
+            <span className="text-white/10 hidden lg:inline">|</span>
+            <Link href="#accueil" className="text-[10px] text-white/40 hover:text-white tracking-wider transition-colors duration-200">
+              Politique de Confidentialité
+            </Link>
+            <Link href="#accueil" className="text-[10px] text-white/40 hover:text-white tracking-wider transition-colors duration-200">
+              Mentions Légales
+            </Link>
+            <Link href="#accueil" className="text-[10px] text-white/40 hover:text-white tracking-wider transition-colors duration-200">
+              Politique des Cookies
+            </Link>
+          </div>
           <button
             onClick={scrollToTop}
-            className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300"
-            aria-label="Scroll to top"
+            className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300 cursor-pointer"
+            aria-label="Retour en haut"
           >
-            <ArrowUp size={18} />
+            <ArrowUp size={16} />
           </button>
         </div>
       </div>

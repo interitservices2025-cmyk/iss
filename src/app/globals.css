@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1C2254;
-  --color-primary-light: #2c3577;
+  --color-primary: #1B224F;
+  --color-primary-light: #2a3272;
   --color-secondary: #F28C28;
   --color-secondary-light: #ffa64d;
   --color-neutral-dark: #2B2B2B;
@@ -28,6 +28,34 @@ body {
   overflow-x: hidden;
 }
 
+/* Animations d'écosystème connecté */
+@keyframes spin-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-orbit {
+  animation: spin-orbit 50s linear infinite;
+}
+
+@keyframes pulse-flow {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-pulse-flow {
+  stroke-dasharray: 8 4;
+  animation: pulse-flow 1.5s linear infinite;
+}
+
 /* Effets Glassmorphism Premium */
 .glass-header {
   background-color: rgba(255, 255, 255, 0.75);
@@ -44,7 +72,7 @@ body {
 }
 
 .glass-card-dark {
-  background: rgba(28, 34, 84, 0.75);
+  background: rgba(27, 34, 79, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -58,10 +86,11 @@ body {
   background: #F8F9FB;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1C2254;
+  background: #1B224F;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #F28C28;
 }
+
 

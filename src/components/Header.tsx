@@ -26,21 +26,18 @@ export default function Header() {
   const navLinks = [
     { name: "Accueil", href: "#accueil" },
     { name: "À propos", href: "#a-propos" },
-    { name: "Nos filiales", href: "#nos-filiales" },
+    { name: "Écosystème", href: "#ecosysteme" },
+    { name: "Nos filiales", href: "#filiales" },
     { name: "Contact", href: "#contact" },
   ];
 
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          isScrolled
-            ? "glass-header shadow-md py-4"
-            : "bg-transparent py-6"
-        }`}
+        className="sticky top-0 w-full z-50 transition-all duration-300 border-b bg-white border-black/5 py-4 shadow-md"
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          {/* Logo ISS */}
+        <div className="max-w-7xl mx-auto px-8 lg:px-12 flex items-center justify-between">
+          {/* Logo ISS épuré seul */}
           <Link href="#accueil" className="flex items-center group">
             <div className="relative w-16 h-12 transition-transform duration-300 group-hover:scale-105">
               <Image
@@ -53,15 +50,13 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* Desktop Navigation - Cabinet de Conseil Style */}
+          <nav className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium tracking-wide relative py-2 transition-colors duration-300 hover:text-secondary ${
-                  isScrolled ? "text-primary" : "text-white/90 hover:text-white"
-                } after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:w-full`}
+                className="text-xs font-semibold tracking-widest uppercase transition-colors duration-300 text-[#1B224F]/80 hover:text-secondary"
               >
                 {link.name}
               </Link>
@@ -72,11 +67,7 @@ export default function Header() {
           <div className="hidden md:block">
             <Link
               href="#contact"
-              className={`text-sm font-semibold px-6 py-2.5 rounded-full tracking-wide transition-all duration-300 ${
-                isScrolled
-                  ? "bg-primary text-white hover:bg-secondary hover:shadow-lg hover:shadow-secondary/20"
-                  : "bg-white text-primary hover:bg-secondary hover:text-white hover:shadow-lg hover:shadow-secondary/20"
-              }`}
+              className="text-xs font-semibold tracking-widest uppercase px-6 py-3 bg-secondary border border-secondary text-white hover:bg-secondary-light hover:border-secondary-light transition-all duration-300"
             >
               Nous contacter
             </Link>
@@ -85,13 +76,13 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg focus:outline-none"
-            aria-label="Toggle Menu"
+            className="md:hidden p-2 rounded-lg focus:outline-none text-[#1B224F]"
+            aria-label="Menu principal"
           >
             {isMobileMenuOpen ? (
-              <X className={isScrolled ? "text-primary" : "text-white"} size={28} />
+              <X size={26} />
             ) : (
-              <Menu className={isScrolled ? "text-primary" : "text-white"} size={28} />
+              <Menu size={26} />
             )}
           </button>
         </div>
@@ -105,14 +96,14 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-x-0 top-0 pt-24 pb-8 bg-primary/98 backdrop-blur-xl z-40 shadow-2xl border-b border-white/10 md:hidden flex flex-col items-center gap-6"
+            className="fixed inset-x-0 top-0 pt-24 pb-8 bg-primary/98 backdrop-blur-2xl z-40 shadow-2xl border-b border-white/10 md:hidden flex flex-col items-center gap-6"
           >
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-white/90 hover:text-secondary text-lg font-medium tracking-wide transition-colors duration-200"
+                className="text-white/80 hover:text-secondary text-sm font-semibold tracking-widest uppercase transition-colors duration-200"
               >
                 {link.name}
               </Link>
@@ -120,7 +111,7 @@ export default function Header() {
             <Link
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="mt-4 bg-secondary text-white text-base font-semibold px-8 py-3 rounded-full hover:bg-secondary-light tracking-wide transition-colors duration-200 shadow-lg shadow-secondary/20"
+              className="mt-4 border border-secondary bg-secondary text-white text-xs font-semibold tracking-widest uppercase px-8 py-3.5 hover:bg-secondary-light hover:border-secondary-light transition-colors duration-200 shadow-lg shadow-secondary/20"
             >
               Nous contacter
             </Link>
