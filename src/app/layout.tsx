@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Inter-Solutions Services (ISS) | Groupe Multiservices International",
   description: "ISS est un groupe multidisciplinaire spécialisé en informatique, ressources humaines, immobilier et ingénierie. Découvrez nos solutions professionnelles.",
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/favicon.png?v=3",
+    shortcut: "/favicon.png?v=3",
+    apple: "/favicon.png?v=3",
   },
 };
 
