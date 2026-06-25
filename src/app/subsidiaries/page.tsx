@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { 
   Cpu, 
   Users2, 
@@ -118,7 +118,7 @@ export default function SubsidiariesPage() {
   ];
 
   // Animation variants
-  const subContainerVariants = {
+  const subContainerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -128,12 +128,12 @@ export default function SubsidiariesPage() {
     }
   };
 
-  const subItemVariants = {
-    hidden: { opacity: 0, y: 25 },
+  const subItemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }
+      transition: { duration: 0.4 }
     }
   };
 
