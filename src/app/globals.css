@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1B224F;
-  --color-primary-light: #2a3272;
-  --color-secondary: #F28C28;
-  --color-secondary-light: #ffa64d;
-  --color-neutral-dark: #2B2B2B;
-  --color-neutral-light: #F8F9FB;
+  --color-primary: #161933;
+  --color-primary-light: #252a54;
+  --color-secondary: #F7941D;
+  --color-secondary-light: #f9a640;
+  --color-neutral-dark: #161933;
+  --color-neutral-light: #F5F7FA;
   
   --font-sans: var(--font-geist-sans), Inter, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
@@ -14,7 +14,7 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: #2B2B2B;
+  --foreground: #6B7280;
 }
 
 /* Scroll fluide pour les ancres */
@@ -83,14 +83,14 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F8F9FB;
+  background: #F5F7FA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1B224F;
+  background: #161933;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #F28C28;
+  background: #F7941D;
 }
 
 

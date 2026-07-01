@@ -25,9 +25,9 @@ export default function Header() {
           
           {/* Logo ISS horizontal officiel bien visible sur fond blanc */}
           <Link href="/" className="flex items-center group">
-            <div className="relative h-11 w-44 sm:w-48 transition-transform duration-300 group-hover:scale-105">
+            <div className="relative h-20 w-64 sm:w-72 transition-transform duration-300 group-hover:scale-105">
               <img
-                src="/logo.png?v=3"
+                src="/logo.jpg"
                 alt="Logo ISS"
                 className="h-full w-full object-contain object-left"
               />

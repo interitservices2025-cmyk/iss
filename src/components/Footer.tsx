@@ -90,11 +90,11 @@ export default function Footer() {
           {/* Logo & Manifesto Column */}
           <div className="flex flex-col gap-6 lg:col-span-4">
             <div className="flex items-center">
-              <div className="bg-white px-4 py-2 rounded flex items-center justify-center relative w-44 h-14 shadow-sm">
+              <div className="bg-white px-4 py-2 rounded flex items-center justify-center relative w-64 h-24 shadow-sm">
                 <img
-                  src="/logo.png?v=3"
+                  src="/logo.jpg"
                   alt="Logo ISS"
-                  className="w-full h-full object-contain p-1"
+                  className="w-full h-full object-contain p-0.5"
                 />
               </div>
             </div>

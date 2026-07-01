@@ -13,7 +13,8 @@ import {
   ArrowUpRight, 
   X,
   ExternalLink,
-  ChevronRight
+  ChevronRight,
+  Utensils
 } from "lucide-react";
 
 import Header from "@/components/Header";
@@ -42,11 +43,11 @@ export default function SubsidiariesPage() {
       tagline: "Intelligence Numérique & Design Augmenté",
       description: "Notre filiale technologique orchestre l'innovation digitale, l'implémentation d'architectures logicielles IA-Native et les stratégies de communication visuelle à fort impact entre le Canada et l'Afrique.",
       icon: Cpu,
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
       stats: [
-        { label: "Projets livrés", value: "80+" },
-        { label: "Satisfaction", value: "99%" },
-        { label: "Experts", value: "25+" }
+        { label: "Projets livrés", value: "5+" },
+        { label: "Satisfaction", value: "100%" },
+        { label: "Experts", value: "3+" }
       ],
       detailedServices: [
         { title: "Design & Créativité Augmentée", desc: "Création d'identités visuelles percutantes, chartes graphiques, UI/UX premium et supports de marque haut de gamme." },
@@ -63,11 +64,11 @@ export default function SubsidiariesPage() {
       tagline: "Capital Humain & Recrutement International",
       description: "Cabinet de conseil stratégique en gestion des talents. Inter-RH gère l'acquisition de compétences clés, la transformation managériale et le recrutement transfrontalier pour combler le déficit de compétences.",
       icon: Users2,
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800",
       stats: [
-        { label: "Placements réussis", value: "450+" },
+        { label: "Placements réussis", value: "10+" },
         { label: "Rétention des talents", value: "95%" },
-        { label: "Partenaires mondiaux", value: "30+" }
+        { label: "Partenaires mondiaux", value: "2+" }
       ],
       detailedServices: [
         { title: "Recrutement Stratégique National & International", desc: "Chasse de têtes, sourcing de profils hautement qualifiés et intermédiation pour l'immigration professionnelle." },
@@ -80,39 +81,58 @@ export default function SubsidiariesPage() {
     {
       id: "inter-immo",
       name: "Inter-Immo",
-      tagline: "Asset Management & Conseil Immobilier",
-      description: "Spécialisée dans l'ingénierie et la gestion d'actifs immobiliers, Inter-Immo sécurise, valorise et administre vos investissements fonciers et patrimoniaux avec une transparence absolue.",
+      tagline: "Promotion Immobilière & Sécurisation Foncière",
+      description: "Spécialisée dans la promotion immobilière, la sécurisation de transactions foncières et la gestion locative au Cameroun. Inter-Immo vous accompagne dans l'achat de terrains, l'obtention de titres fonciers et la gestion de vos biens.",
       icon: Building2,
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80&w=800",
       stats: [
-        { label: "Biens sous gestion", value: "120M€+" },
-        { label: "Taux d'occupation", value: "98.5%" },
-        { label: "Clients fidélisés", value: "150+" }
+        { label: "Biens sous gestion", value: "3+" },
+        { label: "Taux d'occupation", value: "98%" },
+        { label: "Clients fidélisés", value: "5+" }
       ],
       detailedServices: [
-        { title: "Gestion Locative d'Actifs d'Entreprise & Résidentiels", desc: "Suivi des baux, encaissement des loyers, gestion technique et relations quotidiennes avec les locataires." },
-        { title: "Administration de Copropriétés Complexes", desc: "Syndic professionnel, gestion comptable rigoureuse et entretien préventif des structures et parties communes." },
-        { title: "Transactions, Cessions & Acquisitions", desc: "Courtage de haut niveau, négociations d'actifs commerciaux et résidentiels, et valorisation patrimoniale." },
-        { title: "Conseil Stratégique en Investissement & Fiscalité", desc: "Optimisation de portefeuilles, montages financiers immobiliers et planification de la transmission de patrimoine." }
+        { title: "Achat de Terrains & Sécurisation Foncière", desc: "Recherche de parcelles, enquêtes administratives, vérification de titres fonciers et sécurisation des transactions foncières au Cameroun." },
+        { title: "Promotion Immobilière & Vente de Maisons", desc: "Développement de projets immobiliers résidentiels modernes et vente de maisons de qualité adaptées au marché camerounais." },
+        { title: "Gestion Locative & Administration", desc: "Suivi des baux, encaissement rigoureux des loyers, entretien préventif et relations courantes avec les locataires." },
+        { title: "Accompagnement Administratif Immobilier", desc: "Assistance complète pour les démarches administratives, l'obtention du titre foncier et les formalités notariales." }
       ]
     },
     {
       id: "electromeca",
       name: "Electromeca+",
-      tagline: "Ingénierie Avancée & Maintenance Industrielle",
-      description: "Garant des performances techniques et industrielles de nos clients. Electromeca+ déploie des solutions de conception, de maintenance préventive haute précision et de logistique d'équipements lourds.",
+      tagline: "Maintenance Industrielle & Groupes Électrogènes",
+      description: "Garant des performances techniques et industrielles de nos clients au Cameroun. Electromeca+ déploie des solutions d'ingénierie mécanique, d'installation d'armoires électriques et de maintenance de groupes électrogènes.",
       icon: Wrench,
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
       stats: [
-        { label: "Disponibilité machines", value: "99.2%" },
+        { label: "Disponibilité", value: "99%" },
         { label: "Interventions rapides", value: "24/7" },
-        { label: "Contrats industriels", value: "45+" }
+        { label: "Contrats industriels", value: "3+" }
       ],
       detailedServices: [
-        { title: "Maintenance Mécanique Industrielle Haute Précision", desc: "Diagnostic vibratoire, lignage laser, révision complète de machines tournantes et d'équipements de production." },
-        { title: "Automatismes & Réseaux Électrotechniques", desc: "Programmation d'automates, câblage d'armoires électriques industrielles et intégration de systèmes de contrôle-commande." },
-        { title: "Ingénierie de Conception & Études Techniques", desc: "Modélisation CAO/DAO, dimensionnement de structures et amélioration continue de process industriels existants." },
-        { title: "Location & Gestion Logistique d'Engins de Chantier", desc: "Mise à disposition de flottes d'engins lourds révisés et accompagnement logistique sur site." }
+        { title: "Maintenance & Dépannage de Groupes Électrogènes", desc: "Installation, maintenance préventive et curative de groupes électrogènes de toutes puissances pour assurer la continuité énergétique." },
+        { title: "Armoires Électriques de Puissance & Automatismes", desc: "Câblage d'armoires industrielles, programmation d'automates et installation de systèmes de secours et d'inverseurs de source." },
+        { title: "Maintenance Mécanique Industrielle", desc: "Maintenance préventive de moteurs, révision d'équipements de production et interventions d'urgence sur site." },
+        { title: "Ingénierie de Conception & Études", desc: "Études techniques de process industriels, dimensionnement d'installations de secours et plans d'amélioration de la productivité." }
+      ]
+    },
+    {
+      id: "happy-food",
+      name: "Happy Food",
+      tagline: "Art Culinaire & Restauration d'Excellence",
+      description: "Happy Food propose des services de restauration, traiteur événementiel de prestige et plateaux-repas d'entreprise au Cameroun, alliant saveurs de la cuisine africaine et gastronomie internationale.",
+      icon: Utensils,
+      image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&q=80&w=800",
+      stats: [
+        { label: "Plats servis", value: "100+" },
+        { label: "Événements couverts", value: "5+" },
+        { label: "Entreprises partenaires", value: "3+" }
+      ],
+      detailedServices: [
+        { title: "Service Traiteur Événementiel", desc: "Création de buffets dînatoires, cocktails de prestige et repas de gala pour événements corporatifs et privés." },
+        { title: "Plateaux-Repas & Repas d'Entreprise", desc: "Solutions de cantine d'entreprise externe, plateaux-repas sains et équilibrés livrés quotidiennement dans vos bureaux." },
+        { title: "Cuisine Africaine & Internationale", desc: "Mariage harmonieux de spécialités locales camerounaises et de classiques de la gastronomie internationale." },
+        { title: "Logistique & Livraison de Repas", desc: "Service rapide de livraison de repas chauds respectant les règles d'hygiène et de conservation les plus strictes." }
       ]
     }
   ];

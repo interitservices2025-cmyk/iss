@@ -203,14 +203,14 @@ export default function ContactPage() {
                 <div className="bg-neutral-light border border-black/5 p-8 sm:p-10 shadow-sm relative">
                   <div className="mb-8">
                     <h3 className="text-lg font-bold text-primary">Formulaire de demande</h3>
-                    <p className="text-xs text-neutral-dark/50 mt-1 font-light font-sans">Remplissez les champs ci-dessous. Tous les champs marqués d'une étoile (*) sont requis.</p>
+                    <p className="text-xs text-neutral-dark/50 mt-1 font-light font-sans">Veuillez renseigner les informations obligatoires ci-dessous.</p>
                   </div>
 
                   <form onSubmit={handleFormSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="flex flex-col gap-1.5">
                         <label htmlFor="name" className="text-[9px] font-bold uppercase tracking-widest text-primary/60">
-                          Nom complet *
+                          Nom complet
                         </label>
                         <input
                           type="text"
@@ -242,7 +242,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="flex flex-col gap-1.5">
                         <label htmlFor="email" className="text-[9px] font-bold uppercase tracking-widest text-primary/60">
-                          E-mail de contact *
+                          E-mail de contact
                         </label>
                         <input
                           type="email"
@@ -273,7 +273,7 @@ export default function ContactPage() {
 
                     <div className="flex flex-col gap-1.5">
                       <label htmlFor="subject" className="text-[9px] font-bold uppercase tracking-widest text-primary/60">
-                        Sujet de votre demande *
+                        Sujet de votre demande
                       </label>
                       <select
                         id="subject"
@@ -288,13 +288,14 @@ export default function ContactPage() {
                         <option value="inter-rh">Requête vers Inter-RH (Recrutement / Talents)</option>
                         <option value="inter-immo">Requête vers Inter-Immo (Asset Management / Immobilier)</option>
                         <option value="electromeca">Requête vers Electromeca+ (Maintenance Industrielle)</option>
+                        <option value="happy-food">Requête vers Happy Food (Restauration / Traiteur)</option>
                         <option value="autre">Autre Demande Institutionnelle</option>
                       </select>
                     </div>
 
                     <div className="flex flex-col gap-1.5">
                       <label htmlFor="message" className="text-[9px] font-bold uppercase tracking-widest text-primary/60">
-                        Votre message *
+                        Votre message
                       </label>
                       <textarea
                         id="message"

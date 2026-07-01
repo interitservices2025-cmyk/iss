@@ -14,7 +14,8 @@ import {
   Layers,
   ArrowUpRight,
   ShieldCheck,
-  CheckCircle2
+  CheckCircle2,
+  Utensils
 } from "lucide-react";
 
 import Header from "@/components/Header";
@@ -39,7 +40,7 @@ export default function HomeGroup() {
       tagline: "Intelligence Numérique & Design Augmenté",
       description: "Notre filiale technologique orchestre l'innovation digitale, l'implémentation d'architectures logicielles IA-Native et les stratégies de communication visuelle.",
       icon: Cpu,
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
       link: "/subsidiaries#inter-it"
     },
     {
@@ -48,26 +49,35 @@ export default function HomeGroup() {
       tagline: "Capital Humain & Recrutement International",
       description: "Cabinet de conseil stratégique en gestion des talents. Inter-RH gère l'acquisition de compétences clés et le recrutement transfrontalier.",
       icon: Users2,
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800",
       link: "/subsidiaries#inter-rh"
     },
     {
       id: "inter-immo",
       name: "Inter-Immo",
-      tagline: "Asset Management & Conseil Immobilier",
-      description: "Spécialisée dans l'ingénierie et la gestion d'actifs immobiliers, Inter-Immo sécurise, valorise et administre vos investissements fonciers.",
+      tagline: "Promotion Immobilière & Sécurisation Foncière",
+      description: "Spécialisée dans la promotion immobilière, l'achat de terrains et la gestion locative au Cameroun, Inter-Immo sécurise vos transactions foncières et gère vos biens.",
       icon: Building2,
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80&w=800",
       link: "/subsidiaries#inter-immo"
     },
     {
       id: "electromeca",
       name: "Electromeca+",
-      tagline: "Ingénierie Avancée & Maintenance Industrielle",
-      description: "Garant des performances techniques et industrielles de nos clients. Electromeca+ déploie des solutions de maintenance préventive.",
+      tagline: "Maintenance Industrielle & Groupes Électrogènes",
+      description: "Expert en maintenance industrielle au Cameroun. Electromeca+ assure l'installation d'armoires électriques, l'entretien de moteurs et la maintenance de groupes électrogènes.",
       icon: Wrench,
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
       link: "/subsidiaries#electromeca"
+    },
+    {
+      id: "happy-food",
+      name: "Happy Food",
+      tagline: "Restauration & Traiteur d'Excellence",
+      description: "Services traiteur, restauration d'entreprise et livraison de repas au Cameroun, alliant saveurs de la cuisine africaine et gastronomie internationale.",
+      icon: Utensils,
+      image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&q=80&w=800",
+      link: "/subsidiaries#happy-food"
     }
   ];
 
@@ -101,7 +111,7 @@ export default function HomeGroup() {
         <section className="relative min-h-[75vh] flex items-center justify-center bg-neutral-950 overflow-hidden py-24">
           <div className="absolute inset-0 z-0 w-full h-full">
             <img
-              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1600"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600"
               alt="ISS Groupe Bureau Collaboration"
               className="absolute inset-0 w-full h-full object-cover opacity-35"
             />
@@ -141,7 +151,7 @@ export default function HomeGroup() {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="text-sm sm:text-base text-white/75 max-w-xl leading-relaxed mb-10 font-light"
               >
-                Inter-Solutions Services (ISS) pilote un écosystème de filiales spécialisées et interconnectées afin de créer de la valeur à long terme dans l'IT, l'ingénierie, l'immobilier et le capital humain.
+                Inter-Solutions Services (ISS) pilote un écosystème de filiales spécialisées et interconnectées afin de créer de la valeur à long terme dans l'Informatique, l'ingénierie, l'immobilier et le capital humain.
               </motion.p>
 
               <motion.div
@@ -172,14 +182,14 @@ export default function HomeGroup() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="w-72 h-72 rounded-full border border-white/5 flex items-center justify-center relative"
+                className="w-80 h-80 rounded-full border border-white/5 flex items-center justify-center relative"
               >
                 <div className="absolute inset-8 rounded-full border border-white/10 animate-pulse" />
                 
-                <div className="w-24 h-24 rounded-full bg-white border-4 border-neutral-light flex items-center justify-center relative z-10 shadow-2xl">
-                  <div className="relative w-16 h-8">
+                <div className="w-28 h-28 rounded-full bg-white border-4 border-neutral-light flex items-center justify-center relative z-10 shadow-2xl">
+                  <div className="relative w-20 h-10">
                     <img
-                      src="/logo.png?v=3"
+                      src="/logo.jpg"
                       alt="ISS Logo"
                       className="w-full h-full object-contain"
                     />
@@ -195,13 +205,13 @@ export default function HomeGroup() {
         {/* ======================================== */}
         {/* STATISTICS SECTION                       */}
         {/* ======================================== */}
-        <section className="bg-[#0b0e27] text-white py-16 border-y border-white/5 relative overflow-hidden">
+        <section className="bg-primary text-white py-16 border-y border-white/5 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-8 lg:px-12 relative z-10">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
               {[
-                { number: 4, suffix: "", label: "Filiales spécialisées" },
-                { number: 150, suffix: "+", label: "Collaborateurs experts" },
-                { number: 10, suffix: "+", label: "Secteurs d'activité" },
+                { number: 5, suffix: "", label: "Filiales spécialisées" },
+                { number: 10, suffix: "+", label: "Projets réalisés" },
+                { number: 2, suffix: "+", label: "Pays desservis" },
                 { number: 100, suffix: "%", label: "Engagement d'excellence" }
               ].map((stat, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center lg:items-start lg:text-left border-l border-white/5 pl-6 lg:first:border-none">
@@ -258,9 +268,9 @@ export default function HomeGroup() {
               transition={{ duration: 0.7 }}
               className="lg:col-span-5 relative"
             >
-              <div className="relative h-80 w-full shadow-xl border border-black/5 bg-[#0b0e27] overflow-hidden">
+              <div className="relative h-80 w-full shadow-xl border border-black/5 bg-primary overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800"
                   alt="ISS Corporate Vocation"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -299,17 +309,22 @@ export default function HomeGroup() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 max-w-6xl mx-auto"
             >
-              {sectors.map((sub) => {
+              {sectors.map((sub, index) => {
                 const IconComp = sub.icon;
+                const gridSpan = index < 3 
+                  ? "lg:col-span-2" 
+                  : index === 3 
+                    ? "lg:col-span-3" 
+                    : "md:col-span-2 lg:col-span-3 md:max-w-xl md:mx-auto w-full lg:mx-0 lg:max-w-none";
                 return (
                   <motion.div 
                     key={sub.id}
                     variants={itemVariants}
-                    className="bg-white border border-black/5 p-5 shadow-sm flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition-all duration-300 group min-h-[230px]"
+                    className={`bg-white border border-black/5 p-6 shadow-sm flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition-all duration-300 group min-h-[240px] ${gridSpan}`}
                   >
-                    <div className="space-y-3">
+                    <div className="space-y-4">
                       <div className="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center transition-colors group-hover:bg-secondary group-hover:text-white">
                         <IconComp size={20} />
                       </div>
@@ -323,7 +338,7 @@ export default function HomeGroup() {
                     
                     <Link
                       href={sub.link}
-                      className="text-[10px] font-bold tracking-widest uppercase text-primary/70 hover:text-secondary flex items-center gap-1.5 pt-3 border-t border-black/5 mt-3 transition-colors group"
+                      className="text-[10px] font-bold tracking-widest uppercase text-primary/70 hover:text-secondary flex items-center gap-1.5 pt-3 border-t border-black/5 mt-4 transition-colors group"
                     >
                       Découvrir l'entité
                       <ChevronRight size={12} className="transition-transform group-hover:translate-x-1" />
@@ -397,13 +412,13 @@ export default function HomeGroup() {
                   <path d="M 600 120 Q 750 80 880 150" />
                   <path
                     d="M 500 280 Q 360 180 220 140"
-                    stroke="#F28C28"
+                    stroke="#F7941D"
                     strokeWidth="2.5"
                     strokeDasharray="6 3"
                     className="animate-pulse-flow"
                   />
-                  <circle cx="500" cy="280" r="5" fill="#F28C28" />
-                  <circle cx="220" cy="140" r="4" fill="#F28C28" />
+                  <circle cx="500" cy="280" r="5" fill="#F7941D" />
+                  <circle cx="220" cy="140" r="4" fill="#F7941D" />
                 </svg>
               </div>
             </motion.div>

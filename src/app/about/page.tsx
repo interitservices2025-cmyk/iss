@@ -38,24 +38,24 @@ export default function AboutPage() {
 
   const timeline = [
     {
-      phase: "Phase 1 : Analyse & Concept",
-      title: "Diagnostic Stratégique",
-      desc: "Analyse fine des demandes sectorielles et modélisation de l'architecture initiale du groupe."
+      phase: "Étape 1 : Juin 2023",
+      title: "Création de INTER-IT SERVICES",
+      desc: "Lancement des activités de la filiale technologique et développement des services numériques."
     },
     {
-      phase: "Phase 2 : Structuration",
-      title: "Planification Opérationnelle",
-      desc: "Consolidation juridique et définition des axes de synergie technique entre nos filiales."
+      phase: "Étape 2",
+      title: "Création de INTER-RH",
+      desc: "Développement des services de ressources humaines, de coaching managérial et de recrutement international."
     },
     {
-      phase: "Phase 3 : Déploiement",
-      title: "Exécution & Synergie",
-      desc: "Lancement des opérations coordonnées et accélération des filiales sur leurs marchés."
+      phase: "Étape 3",
+      title: "Création des nouvelles filiales",
+      desc: "Diversification des activités et lancement des filiales Inter-Immo, Electromeca+ et Happy Food."
     },
     {
-      phase: "Phase 4 : Optimisation",
-      title: "Évolution & R&D",
-      desc: "Suivi des indices de performance, investissement technologique (IA) et expansion continue."
+      phase: "Étape 4 : Aujourd'hui",
+      title: "Groupe multiservices d'excellence",
+      desc: "Inter-Solutions Services devient un groupe multiservices d'orientation et de pilotage stratégique de référence."
     }
   ];
 
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 Fondé sur une vision multidisciplinaire, le groupe **Inter-Solutions Services (ISS)** orchestre l'innovation au sein de filiales spécialisées et interconnectées. Notre ambition est de combler les ponts technologiques et opérationnels entre l'Afrique (depuis notre siège à Yaoundé) et l'Amérique du Nord.
               </p>
               <p className="text-neutral-dark/70 text-xs sm:text-sm leading-relaxed font-light">
-                Depuis notre création, nous veillons à ce que chaque filiale conserve une autonomie agile tout en bénéficiant de la force de frappe financière, juridique et technologique du groupe. Cette approche collaborative transversale permet à ISS de proposer des solutions de classe mondiale dans l'IT, le recrutement stratégique, la maintenance industrielle et l'administration immobilière.
+                Depuis notre création, nous veillons à ce que chaque filiale conserve une autonomie agile tout en bénéficiant de la force de frappe financière, juridique et technologique du groupe. Cette approche collaborative transversale permet à ISS de proposer des solutions de classe mondiale dans l'Informatique, le recrutement stratégique, la maintenance industrielle et l'administration immobilière.
               </p>
             </motion.div>
 
@@ -142,7 +142,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               className="lg:col-span-5 relative"
             >
-              <div className="relative h-96 w-full shadow-2xl border border-black/5 bg-[#0b0e27] overflow-hidden">
+              <div className="relative h-96 w-full shadow-2xl border border-black/5 bg-primary overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
                   alt="ISS Corporate Collaboration"
@@ -290,8 +290,8 @@ export default function AboutPage() {
                   <span className="font-bold text-secondary">100%</span>
                 </li>
                 <li className="flex justify-between border-b border-white/5 pb-2">
-                  <span className="font-light">Projets technologiques livrés</span>
-                  <span className="font-bold text-secondary">120+</span>
+                  <span className="font-light">Projets réalisés</span>
+                  <span className="font-bold text-secondary">10+</span>
                 </li>
                 <li className="flex justify-between">
                   <span className="font-light">Rétention des talents (Inter-RH)</span>
@@ -316,7 +316,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.8 }}
                 className="lg:col-span-5 relative"
               >
-                <div className="relative h-[450px] sm:h-[500px] w-full overflow-hidden shadow-2xl border border-black/5 bg-[#0b0e27]">
+                <div className="relative h-[450px] sm:h-[500px] w-full overflow-hidden shadow-2xl border border-black/5 bg-primary">
                   <img
                     src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80&w=800"
                     alt="Équipe de direction d'Inter-Solutions Services"

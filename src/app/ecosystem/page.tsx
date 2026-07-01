@@ -12,7 +12,8 @@ import {
   Check, 
   ArrowUpRight,
   Layers,
-  Network
+  Network,
+  Utensils
 } from "lucide-react";
 
 import Header from "@/components/Header";
@@ -40,9 +41,9 @@ export default function EcosystemPage() {
       name: "Inter-IT Services",
       website: "https://inter-itservices.ca",
       tagline: "Intelligence Numérique & Design Augmenté",
-      description: "Notre filiale technologique orchestre l'innovation digitale, l'implémentation d'architectures logicielles IA-Native et les stratégies de communication visuelle à fort impact.",
+      description: "Notre filiale technologique orchestre l'innovation digitale, l'implémentation d'architectures logicielles IA-Native et les stratégies de communication visuelle.",
       icon: Cpu,
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
       services: [
         "Design & Créativité Augmentée",
         "Digital & Web \"AI-Native\"",
@@ -60,7 +61,7 @@ export default function EcosystemPage() {
       tagline: "Capital Humain & Recrutement International",
       description: "Cabinet de conseil stratégique en gestion des talents. Inter-RH gère l'acquisition de compétences clés, la transformation managériale et le recrutement transfrontalier.",
       icon: Users2,
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800",
       services: [
         "Recrutement stratégique national & international",
         "Gestion externalisée des RH (RPO)",
@@ -68,37 +69,53 @@ export default function EcosystemPage() {
         "Conseil en transformation organisationnelle",
         "Audit social & Rémunération"
       ],
-      angle: 90
+      angle: 72
     },
     {
       id: "inter-immo",
       name: "Inter-Immo",
-      tagline: "Asset Management & Conseil Immobilier",
-      description: "Spécialisée dans l'ingénierie et la gestion d'actifs immobiliers, Inter-Immo sécurise, valorise et administre vos investissements fonciers et patrimoniaux.",
+      tagline: "Promotion Immobilière & Sécurisation Foncière",
+      description: "Spécialisée dans la promotion immobilière, l'achat de terrains et la gestion locative au Cameroun, Inter-Immo sécurise vos transactions foncières et administre vos actifs.",
       icon: Building2,
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80&w=800",
       services: [
-        "Gestion locative d'actifs d'entreprise & résidentiels",
-        "Administration de copropriétés complexes",
-        "Transactions, cessions et acquisitions",
-        "Conseil stratégique en investissement et fiscalité"
+        "Achat de terrains & Vente de maisons",
+        "Location & Gestion immobilière",
+        "Promotion immobilière",
+        "Accompagnement administratif & Titres fonciers",
+        "Sécurisation stricte des transactions"
       ],
-      angle: 180
+      angle: 144
     },
     {
       id: "electromeca",
       name: "Electromeca+",
-      tagline: "Ingénierie Avancée & Maintenance Industrielle",
-      description: "Garant des performances techniques et industrielles de nos clients. Electromeca+ déploie des solutions de conception, maintenance préventive et location d'engins lourds.",
+      tagline: "Maintenance Industrielle & Groupes Électrogènes",
+      description: "Garant des performances industrielles au Cameroun. Electromeca+ déploie des solutions de maintenance préventive et de gestion de groupes électrogènes.",
       icon: Wrench,
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
       services: [
         "Maintenance mécanique industrielle haute précision",
-        "Automatismes et réseaux électrotechniques",
-        "Ingénierie de conception et études techniques",
-        "Location et gestion logistique d'engins de chantier"
+        "Installation & Entretien de Groupes Électrogènes",
+        "Automatismes & Armoires électriques de puissance",
+        "Ingénierie de conception & Maintenance préventive"
       ],
-      angle: 270
+      angle: 216
+    },
+    {
+      id: "happy-food",
+      name: "Happy Food",
+      tagline: "Restauration & Traiteur d'Excellence",
+      description: "Happy Food propose des services de restauration, traiteur événementiel de prestige et plateaux-repas d'entreprise, mariant cuisine africaine et gastronomie internationale.",
+      icon: Utensils,
+      image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&q=80&w=800",
+      services: [
+        "Restauration & Traiteur événementiel",
+        "Cuisine africaine traditionnelle & internationale",
+        "Livraison de repas de bureaux",
+        "Repas d'entreprise & Cocktails de prestige"
+      ],
+      angle: 288
     }
   ];
 
@@ -203,7 +220,7 @@ export default function EcosystemPage() {
                           y1={cy}
                           x2={x2}
                           y2={y2}
-                          stroke={isActive || isHovered ? "rgba(242, 140, 40, 0.4)" : "rgba(27, 34, 79, 0.08)"}
+                          stroke={isActive || isHovered ? "rgba(247, 148, 29, 0.4)" : "rgba(35, 39, 75, 0.08)"}
                           strokeWidth={isActive || isHovered ? 2.5 : 1}
                           className="transition-all duration-300"
                         />
@@ -213,7 +230,7 @@ export default function EcosystemPage() {
                             y1={cy}
                             x2={x2}
                             y2={y2}
-                            stroke="#F28C28"
+                            stroke="#F7941D"
                             strokeWidth={3}
                             className="animate-pulse-flow"
                           />
@@ -227,12 +244,12 @@ export default function EcosystemPage() {
                 <div className="absolute w-[360px] h-[360px] rounded-full border border-dashed border-primary/5 pointer-events-none animate-pulse" />
 
                 {/* Central Node (ISS) */}
-                <div className="w-28 h-28 rounded-full bg-white border-4 border-neutral-light shadow-2xl flex items-center justify-center z-10 transition-transform duration-500 hover:scale-105">
-                  <div className="relative w-20 h-10">
+                <div className="w-28 h-28 rounded-full bg-white border-4 border-neutral-light shadow-2xl flex items-center justify-center z-10 transition-transform duration-500 hover:scale-105 overflow-hidden">
+                  <div className="relative w-24 h-24 flex items-center justify-center">
                     <img
-                      src="/logo.png?v=3"
+                      src="/logo.jpg"
                       alt="ISS Central"
-                      className="object-contain"
+                      className="w-full h-full object-contain p-1"
                     />
                   </div>
                 </div>
@@ -395,17 +412,17 @@ export default function EcosystemPage() {
 
                   <path
                     d="M 500 280 Q 360 180 220 140"
-                    stroke="#F28C28"
+                    stroke="#F7941D"
                     strokeWidth="2.5"
                     strokeDasharray="6 3"
                     className="animate-pulse-flow"
                   />
 
-                  <circle cx="500" cy="280" r="6" fill="#F28C28" />
-                  <circle cx="500" cy="280" r="14" stroke="#F28C28" strokeWidth="1" className="animate-ping" />
+                  <circle cx="500" cy="280" r="6" fill="#F7941D" />
+                  <circle cx="500" cy="280" r="14" stroke="#F7941D" strokeWidth="1" className="animate-ping" />
 
-                  <circle cx="220" cy="140" r="5" fill="#F28C28" />
-                  <circle cx="220" cy="140" r="10" stroke="#F28C28" strokeWidth="1" className="opacity-75" />
+                  <circle cx="220" cy="140" r="5" fill="#F7941D" />
+                  <circle cx="220" cy="140" r="10" stroke="#F7941D" strokeWidth="1" className="opacity-75" />
                 </svg>
               </div>
             </div>

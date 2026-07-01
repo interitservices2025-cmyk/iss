@@ -14,7 +14,6 @@ try {
   console.error("=== ERREUR lors de la copie du favicon :", err);
 }
 
-
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
